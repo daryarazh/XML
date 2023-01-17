@@ -1,0 +1,114 @@
+XML
+ 21. Создать внешний репозиторий c названием XML.
+ 22. Клонировать репозиторий XML на локальный компьютер.
+
+git clone
+
+ 23. Внутри локального XML создать файл “new.xml”.
+
+touch new.xml
+
+ 24. Добавить файл под гит.
+
+git add new.xml
+
+ 25. Закоммитить файл.
+
+git commit -m "add new.xml"
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+
+git push
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+
+vim new.xml
+i
+<?xml version="1.0" encoding="UTF-8" ?>
+<info>
+	<name>Darya</name>
+	<age>35</age>
+	<pets>1</pets>
+	<salary>100000</salary>
+</info>
+esc :wq
+  
+ 28. Отправить изменения на внешний репозиторий.
+
+git add new.xml
+git commit -m "mod new.xml"
+git push
+
+ 29. Создать файл preferences.xml
+
+touch preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+ 
+vim preferences.xml
+i
+<?xml version="1.0" encoding="UTF-8" ?>
+<preferences>
+	 <movie>Cube<movie>
+	 <serial>Scrubs</serial>
+	 <food>potatoes</food>
+	 <season>summer</season>
+	 <country>Peru</country>
+ </preferences>
+esc :wq
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+
+vim skills.xml
+i
+<?xml version="1.0" encoding="UTF-8" ?>
+<skills>
+	<item0>Postman</item0>
+	<item1>Charles</item1>
+	<item2>JS</item2>
+	<item3>SQL</item3>
+</skills>
+esc :wq
+
+
+ 32. Сделать коммит в одну строку.
+
+git commit -a -m "add preferences.xml skills.xml"
+
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+
+git push
+
+ 34. На веб интерфейсе создать файл bug_report.xml.
+
+add file
+create new file
+bug_report.json
+
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+commit new file
+
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+
+edit this file
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<bug_report>
+  <id></id>
+  <title></title>
+  <environment></environment>
+  <severity></severity>
+  <priority></priority>
+  <steps_to_reproduce></steps_to_reproduce>
+  <expected result></expected result>
+  <actual_result></actual_result>
+</bug_report>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+commit changes
+
+ 38. Синхронизировать внешний и локальный репозиторий XML
+
+git pull
