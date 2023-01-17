@@ -1,1 +1,11 @@
-
+<?xml version="1.0" encoding="UTF-8" ?>
+<bug_report>
+  <id></id>
+  <title></title>
+  <environment></environment>
+  <severity></severity>
+  <priority></priority>
+  <steps_to_reproduce></steps_to_reproduce>
+  <expected result></expected result>
+  <actual_result></actual_result>
+</bug_report>
